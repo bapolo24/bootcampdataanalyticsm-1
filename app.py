@@ -52,4 +52,6 @@ caudal= calcular_caudal_vogel(caudal_maximo, presion_yacimiento, presion_fondo, 
 st.write("el caudal es:", caudal)
 
 elif modulos=="POO":
+  
+ 
  
