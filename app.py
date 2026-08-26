@@ -61,10 +61,10 @@ elif modulos == "POO":
             self.a = agua
         
         def mostrar_informacion(self):
-            print("pozo:", self.n)
-            print("campo:", self.c)
-            print("petroleo:", self.p, "bpd")
-            print("agua:", self.a, "bad")
+            st.write("pozo:", self.n)
+            st.write("campo:", self.c)
+            st.write("petroleo:", self.p, "bpd")
+            st.write("agua:", self.a, "bad")
         
         def produccion_total(self):
             total_produccion = self.p + self.a
