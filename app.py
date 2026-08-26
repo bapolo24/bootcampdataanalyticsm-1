@@ -74,12 +74,12 @@ elif modulos == "POO":
             produccion_proyectada = (self.p + self.a) * dias
             return produccion_proyectada
 
-    nomnre_pozo = st.text_input("ingrese nombre de pozo")
-    nomnre_campo = st.text_input("ingrese nombre de campo del pozo")
+    nombre_pozo = st.text_input("ingrese nombre de pozo")
+    nombre_campo = st.text_input("ingrese nombre de campo del pozo")
     petroleo = st.number_input("ingrese la produccion de petroleo", min_value=0, max_value=5000, value=1000)
     agua = st.number_input("ingrese la produccion de agua", min_value=0, max_value=9000, value=200)
 
-    pozo_obj = pozo(nomnre_pozo, nomnre_campo, petroleo, agua)
+    pozo = pozo(nombre_pozo, nombre_campo, petroleo, agua)
     st.write(pozo_obj.mostrar_informacion())
     st.write(pozo_obj.produccion_total())
     dias = st.number_input("ingrese los dias de produccion", min_value=0, max_value=365, value=30)
