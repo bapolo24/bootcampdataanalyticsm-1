@@ -42,5 +42,7 @@ elif modulos=="funciones":
     
     return (round(caudal,decimales))
 caudal_maximo=st.number_input("ingrese el caudal maximo")
-    
+presion_yacimiento= st.number_input("ingrese la presion de yacimiento")
+presion_fondo=st.number_input("ingresela presion de fondo")
+decimales=st.slider("seleccione la cantidad de decimales para el resultado")
 
