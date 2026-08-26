@@ -3,7 +3,7 @@ import pandas as pd
 st.title("bootcamps data analytics for oil& gas")
 st.sidebar.title("parametros")
 
-modulos= st.sidebar.selectbox("seleccione un modulo", ["introduccion a variables", "Funciones"])
+modulos= st.sidebar.selectbox("seleccione un modulo", ["introduccion a variables", "Funciones", "POO"])
 
 if modulos=="introduccion a variables":
 
@@ -51,4 +51,25 @@ decimales=st.slider("seleccione la cantidad de decimales para el resultado",min_
 caudal= calcular_caudal_vogel(caudal_maximo, presion_yacimiento, presion_fondo, decimales)
 st.write("el caudal es:", caudal)
 
+elif modulos=="POO"
 
+  class pozo:
+  def __init__(self,nombre, campo,petroleo,agua):
+    self.n=nombre
+    self.c=campo
+    self.p=petroleo
+    self.a=agua
+
+  def mostrar_informacion(self):
+    print("pozo:", self.n)
+    print("campo:", self.c)
+    print("petroleo:", self.p, "bpd")
+    print("agua:", self.a, "bad")
+
+  def produccion_total (self):
+      total_produccion=self.p+self.a
+      return total_produccion
+  
+  def proyectar_produccion (self,dias):
+      produccion_proyectada=(self.p+ self.a)*dias
+      return produccion_proyectada
