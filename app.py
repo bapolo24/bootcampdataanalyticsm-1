@@ -198,10 +198,10 @@ elif modulos == "importacion de librerias":
         380
     )
     
-    campo_auc = Campo("SPE")
+    campo = Campo("SPE")
     
-    campo_auc.agregar_pozo(pozo_1)
-    campo_auc.agregar_pozo(pozo_2)
+    campo.agregar_pozo(pozo_1)
+    campo.agregar_pozo(pozo_2)
     
     st.write(
         "Cantidad de pozos:",
@@ -210,12 +210,12 @@ elif modulos == "importacion de librerias":
     
     st.write(
         "Producción total de petróleo:",
-        campo_auc.produccion_petroleo_total()
+        campo.produccion_petroleo_total()
     )
     
     st.dataframe(
         pd.DataFrame(
-            campo_auc.listar_pozos()
+            campo.listar_pozos()
         )
     )
     
