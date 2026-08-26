@@ -13,3 +13,5 @@ st.write(petroleo_bpd)
 st.write(agua_bpd)
 st.write(liquido_total_bpd)
 st.write(corte_agua_pct)
+
+st.sidebar.title("parametros")
