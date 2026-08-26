@@ -51,37 +51,6 @@ decimales=st.slider("seleccione la cantidad de decimales para el resultado",min_
 caudal= calcular_caudal_vogel(caudal_maximo, presion_yacimiento, presion_fondo, decimales)
 st.write("el caudal es:", caudal)
 
-elif modulos == "POO":
-    class pozo:
-        def __init__(self, nombre, campo, petroleo, agua):
-            self.n = nombre
-            self.c = campo
-            self.p = petroleo
-            self.a = agua
-        
-        def mostrar_informacion(self):
-            print("pozo:", self.n)
-            print("campo:", self.c)
-            print("petroleo:", self.p, "bpd")
-            print("agua:", self.a, "bad")
-        
-        def produccion_total(self):
-            total_produccion = self.p + self.a
-            return total_produccion
-        
-        def proyectar_produccion(self, dias):
-            produccion_proyectada = (self.p + self.a) * dias
-            return produccion_proyectada
 
-    nomnre_pozo = st.text_input("ingrese nombre de pozo")
-    nomnre_campo = st.text_input("ingrese nombre de campo del pozo")
-    petroleo = st.number_input("ingrese la produccion de petroleo", min_value=0, max_value=5000, value=1000)
-    agua = st.number_input("ingrese la produccion de agua", min_value=0, max_value=9000, value=200)
-
-    pozo_obj = pozo(nomnre_pozo, nomnre_campo, petroleo, agua)
-    st.write(pozo_obj.mostrar_informacion())
-    st.write(pozo_obj.produccion_total())
-    dias = st.number_input("ingrese los dias de produccion", min_value=0, max_value=365, value=30)
-    st.write(pozo_obj.proyectar_produccion(dias))
  
  
