@@ -3,7 +3,7 @@ import pandas as pd
 
 from funciones_calculo import (calcular_liquido,calcular_bsw,calcular_gor)
 from funciones_datos import (filtrar_pozo,resumen_dataframe)
-from clases_pozo import Pozo
+from clases_pozo import Pozo, campo
 
 
 
