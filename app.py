@@ -86,5 +86,5 @@ elif modulos == "POO":
     dias = st.number_input("ingrese los dias de produccion", min_value=0, max_value=365, value=30)
     st.write(pozo.proyectar_produccion(dias))
 
- 
+
  
