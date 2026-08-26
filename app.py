@@ -5,7 +5,7 @@ st.sidebar.title("parametros")
 
 modulos= st.sidebar.selectbox("seleccione un modulo", ["introduccion a variables", "Funciones"])
 
-if modulos=="introduccion a variables"
+if modulos=="introduccion a variables":
 
 
 pozo="spe-001"
