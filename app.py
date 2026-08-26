@@ -256,4 +256,4 @@ elif modulos == "importacion de librerias":
         "Resumen:",
         resumen_dataframe(datos)
     )
-     
+
