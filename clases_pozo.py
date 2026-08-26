@@ -1,3 +1,4 @@
+from funciones_calculo import calcular_liquido, calcular_bsw, calcular_gor
 class Pozo:
 
     def __init__(
