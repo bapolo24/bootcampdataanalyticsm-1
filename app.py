@@ -41,6 +41,7 @@ elif modulos=="funciones":
     caudal= round(caudal_maximo*(1-0.2*relacion_presion-0.8*relacion_presion**2), decimales)
     
     return (round(caudal,decimales))
-  caudal_maximo=st.number_input("ingrese el caudal maximo")
+
+caudal_maximo=st.number_input("ingrese el caudal maximo")
     
 
