@@ -51,7 +51,7 @@ decimales=st.slider("seleccione la cantidad de decimales para el resultado",min_
 caudal= calcular_caudal_vogel(caudal_maximo, presion_yacimiento, presion_fondo, decimales)
 st.write("el caudal es:", caudal)
 
-elif modulos=="POO"
+elif modulos=="POO":
 
   class pozo:
   def __init__(self,nombre, campo,petroleo,agua):
