@@ -80,8 +80,8 @@ elif modulos == "POO":
     agua = st.number_input("ingrese la produccion de agua", min_value=0, max_value=9000, value=200)
 
     pozo = pozo(nombre_pozo, nombre_campo, petroleo, agua)
-    st.write(pozo_obj.mostrar_informacion())
-    st.write(pozo_obj.produccion_total())
+    st.write(pozo.mostrar_informacion())
+    st.write(pozo.produccion_total())
     dias = st.number_input("ingrese los dias de produccion", min_value=0, max_value=365, value=30)
     st.write(pozo.proyectar_produccion(dias))
 
