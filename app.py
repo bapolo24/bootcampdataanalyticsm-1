@@ -13,6 +13,7 @@ if modulos=="introduccion a variables":
   status= True
   liquido_total_bpd=petroleo_bpd+agua_bpd
   corte_agua_pct=(agua_bpd)/(liquido_total_bpd)*100
+  
   st.write(pozo)
   st.write(petroleo_bpd)
   st.write(agua_bpd)
@@ -44,7 +45,7 @@ elif modulos=="funciones":
 
 caudal_maximo=st.number_input("ingrese el caudal maximo", min_value=0, max_value=5000, value=1200)
 presion_yacimiento= st.number_input("ingrese la presion de yacimiento", min_value=0, max_value=5000, value=3000)
-presion_fondo=st.number_input("ingresela presion de fondo", min_value=0, max_value=9000, value=1500)
+presion_fondo=st.number_input("ingrese la presion de fondo", min_value=0, max_value=9000, value=1500)
 decimales=st.slider("seleccione la cantidad de decimales para el resultado",min_value=0, max_value=4, value=2)
 
 caudal=calcular_caudal_vogel(caudal_maximo, presion_yacimiento, presion_fondo, decimales)
