@@ -23,7 +23,7 @@ if modulos=="introduccion a variables":
   st.sidebar.title("parametros")
 
 elif modulos=="funciones":
-
+  
   def calcular_caudal_vogel(caudal_maximo=1000, presion_yacimiento=3000, presion_fondo=200, decimales=3):
     """
       Calcula el caudal de petróleo mediante la ecuación de Vogel.
